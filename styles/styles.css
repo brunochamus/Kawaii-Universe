@@ -8,42 +8,24 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-1750px);
+    transform: translateX(-1000px);
   }
 }
 .slider {
-  align-items: center;
-  background: #7469C7;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  height: 100px;
+  width: auto;
+  height: auto;
   margin: auto;
   overflow: hidden;
-  position: relative;
-}
-.slider::before, .slider::after {
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-.slider::before {
-  left: 0;
-  top: 0;
 }
 .slider .slide-track {
-  animation: scroll 40s linear infinite;
   display: flex;
-  width: 1250px;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: 2000px;
 }
 .slider .slide-track .slide-nav {
-  height: 100px;
-  width: 250px;
+  width: 200px;
+}
+.slider .slide-track .slide-nav p {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

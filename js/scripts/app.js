@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function () {
 const container = document.querySelector('.carousel-container');
 const slides = document.querySelectorAll('.slide');
 
@@ -22,3 +23,5 @@ setInterval(()=>{
         }
     }, 500);
 }, 3000);
+
+});
