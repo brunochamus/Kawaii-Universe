@@ -1,0 +1,19 @@
+.products-galery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.product-card {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
