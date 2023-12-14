@@ -1,0 +1,29 @@
+.footer {
+    background-color: rgba(249, 238, 128, 1);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social-image {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 5rem;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.social-image:hover {
+    transform: scale(1.15); 
+    filter: brightness(115%); 
+}

@@ -1,37 +1,5 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
-@keyframes scroll {
-	0% {
-		-webkit-transform: translateX(0);
-		transform: translateX(0);
-	}
-	100% {
-		-webkit-transform: translateX(calc(-200px * 5));
-		transform: translateX(calc(-200px * 5));
-	}
-}
-
-.slider{
-	width: auto;
-	height: auto;
-	margin: auto;
-	overflow: hidden;
-
-	.slide-track{
-		display: flex;
-		animation: scroll 40s linear infinite;
-		-webkit-animation: scroll 40s linear infinite;
-		width: calc(200px * 10);
-
-		.slide-nav{
-			width: 200px;
-
-			p{
-				width: 100%;
-			}
-		}
-	}
-}
+@import "./pages/reset";
+@import "./pages/header";
+@import "./pages/index";
+@import "./pages/footer";
+@import "./pages/products"
