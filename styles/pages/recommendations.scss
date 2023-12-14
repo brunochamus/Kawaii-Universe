@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-200px * 5));
+        transform: translateX(calc(-200px * 5));
+    }
+}
+
+.slider {
+    width: auto;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+
+    .slide-track {
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(200px * 10);
+
+        .slide-nav {
+            width: 200px;
+
+            p {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.body-recommendations {
+    background-image: url(https://i.ibb.co/ZVwTMK2/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .banner {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.top-10-manga{
+    position: relative;
+    img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #deploy-btn{
+        position: absolute; 
+        top: 60%; 
+        left: 75%; 
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+    
+}
+
+#card-content{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    img{
+        height: 460px;
+        width: auto;
+        margin: 70px 80px 70px 50px;
+    }
+
+    .card-text{
+        width: 60%;
+
+        h3{
+            font-size: 2rem;
+            margin: 105px 0px 0px 150px;
+            color: #2BBA9F;
+            font-size: 60px;
+        }
+        p{
+            width: 80%;
+            font-size: 30px;
+            margin: 10px 0px 0px 150px;
+        }
+    }
+}

@@ -1,3 +1,4 @@
+
 // Carrusel
 
 function setupCarousel() {
@@ -24,6 +25,7 @@ function setupCarousel() {
         }, 500);
     }, 3000);
 }
+
 
 // Navbar
 
@@ -75,3 +77,16 @@ function setupNavbar() {
 // Llamadas a las funciones para configurar cada parte
 setupCarousel();
 setupNavbar();
+
+
+
+//funcion de card
+
+function showHide(){
+    const card_container = document.getElementById('card-content');
+    if(card_container.style.visibility == 'hidden'){
+        card_container.style.visibility = "visible";
+    }else{
+        card_container.style.visibility = "hidden";
+    }
+}
