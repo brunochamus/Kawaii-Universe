@@ -181,6 +181,9 @@
 }
 
 //tercera seccion
+.third-section{
+    overflow: hidden;
+}
 .bannerGalery{
     max-width: 100vw;
 }
@@ -189,7 +192,11 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    gap: 16px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 12px;
+    margin-bottom: 10px;
 }
 
 .img1 {
@@ -236,4 +243,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.imgGalery:hover {
+transform: scale(1.2);
 }

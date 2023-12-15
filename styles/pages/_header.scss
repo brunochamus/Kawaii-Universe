@@ -2,25 +2,23 @@
     position: relative;
     background-color: rgba(116, 105, 199, 1);
 }
-
+//navbar
 .nav-bar {
-    width: 100vw;
+    width: 100%;
     position: relative;
     height: 5em;
     background-color: rgba(116, 105, 199, 1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .slider {
-    background: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    background: rgba(116, 105, 199, 1);
+    display: flex;
     align-items: center;
-    width: 100vw;
-    height: 5em;
-    background-color: rgba(116, 105, 199, 1);
+    max-width: 1200px;
+    width: 100%;
 }
 
 .slidenavelement {
@@ -32,15 +30,15 @@
     transition: transform 0.3s ease;
     box-sizing: border-box;
     transform: translateZ(0);
-    margin-right: 3rem;
+    margin-right: 1rem;
     border-radius: 8px;
 }
 
 .slidenavelement img {
     height: 3em;
     object-fit: cover;
-    margin-right: 2rem;
-    margin-left: 3rem;
+    margin-right: 1rem; 
+    margin-left: 1rem; 
 }
 
 .slidenavelement a {
@@ -57,3 +55,6 @@
     transform: scale(1.15) translateZ(0);
 }
 
+.slidenavelement a:active {
+    color: rgba(240, 213, 0, 1);
+}

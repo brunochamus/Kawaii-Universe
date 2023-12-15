@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function startAutoPlay() {
-        setInterval(nextSlide, 3000); // Cambia cada 3 segundos (ajusta según sea necesario)
+        setInterval(nextSlide, 3000);
     }
 
     createIndicators();
@@ -40,8 +40,4 @@ document.addEventListener("DOMContentLoaded", function () {
     startAutoPlay();
 });
 
-// Navbar
-
-
-// Llamadas a las funciones para configurar cada parte
 
