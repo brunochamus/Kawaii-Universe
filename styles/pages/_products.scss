@@ -36,7 +36,34 @@
 .swal2-popup{
     background-color: rgba(247, 235, 172, 0.947) !important;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-family: 'Quatsch';
+}
+
+.swal2-confirm{
+    font-family: 'Quatsch';
+}
+.swal2-cancel{
+    font-family: 'Quatsch';
+}
+
+.bolsin {
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    z-index: 1000;
+}
+
+.bolsin img {
+    width: 7rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.bolsin:hover {
+    transform: scale(1.15);
 }
 
 
+.bolsin:active {
+    transform: scale(1.15);
+    filter: brightness(140%); 
+}

@@ -9,7 +9,7 @@ function mostrarSweetAlert(descripcion, numeroWhatsApp) {
         cancelButtonText: 'Cerrar',
     }).then((result) => {
         if (result.isConfirmed) {
-            window.open('https://wa.me/' + numeroWhatsApp, '_blank');
+            window.open('https://wa.me/' + +5493517015577, '_blank');
         }
     });
 }

@@ -1,0 +1,152 @@
+.banner-about-div{
+    background: linear-gradient(180deg, #F9EE80 10.39%, #FFFCDB 107.97%);
+    display: flex;
+    margin-bottom: -7px;
+}
+.banner-about{
+    max-width: 100%;
+}
+.banner-story{
+    display: flex;
+}
+.banner-story-img{
+    max-width: 100%;
+    margin-bottom: -12rem;
+}
+.about-body{
+    background-image: url('https://i.ibb.co/F7vps9X/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.about-section1{
+    padding-top:3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.quienes-tittle{
+    max-width: 50%;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+}
+
+.about-text1 {
+    flex: 1;
+    padding-right: 20px;
+
+    color: #404041;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Ubuntu;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.img-quienes {
+    margin-left:2rem;
+    margin-top:2rem;
+    max-width: 50%;
+}
+
+.nuestros-tittle{
+    max-width: 90%;
+    padding-right: 17rem;
+    margin-top:-12rem;
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.img-container {
+    flex: 1;
+    max-width: 50%;
+}
+.img-quienes2{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-right: 6rem;
+    width: 100%;
+}
+.about-text2{
+    color: #404041;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Ubuntu;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 4rem;
+}
+.container2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left; 
+}
+
+.recuerdos-img {
+    max-width: 50%;
+    padding-left: 6rem;
+
+}
+
+.about-text3 {
+    padding: 0 20px;
+    color: #404041;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Ubuntu;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-left: 4rem;
+    padding-right: 7rem;
+}
+
+
+.container4 {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.recuerdos-tittle {
+    margin-left: auto;
+    display: block;
+    max-width: 50%;
+    margin-bottom: -16rem;
+}
+.otakus{
+    margin-top: 6rem;
+    max-width: 70%;
+    margin-bottom: -10rem;
+    z-index: 1000;
+    position: relative;
+    margin-left: 4rem;
+}
+.about-text{
+    color: #404041;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Ubuntu;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 4rem;
+}
+.otakusimg{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-right: 6rem;
+    width: 100%;
+    z-index: -2;
+}

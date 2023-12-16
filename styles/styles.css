@@ -10,24 +10,42 @@
   background-color: rgb(116, 105, 199);
 }
 
-.nav-bar {
-  width: 100%;
-  position: relative;
-  height: 5em;
+.scroller {
+  min-width: 100%;
   background-color: rgb(116, 105, 199);
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated=true] {
   overflow: hidden;
-  display: flex;
-  justify-content: center;
 }
 
-.slider {
-  background: rgb(116, 105, 199);
-  display: flex;
-  align-items: center;
-  max-width: 1200px;
-  width: 100%;
+.scroller[data-animated=true] .scroller__inner {
+  width: -moz-max-content;
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
 }
 
+.scroller[data-direction=left] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed=fast] {
+  --_animation-duration: 20s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
 .slidenavelement {
   height: 5em;
   display: flex;
@@ -38,6 +56,7 @@
   box-sizing: border-box;
   transform: translateZ(0);
   margin-right: 1rem;
+  padding-right: 1rem;
   border-radius: 8px;
 }
 
@@ -52,15 +71,15 @@
 .slidenavelement a {
   text-decoration: none;
   color: white;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  font-family: "Quatsch";
 }
 
 .slidenavelement:hover {
-  transform: scale(1.15) translateZ(0);
+  transform: scale(1.2) translateZ(0);
 }
 
 .slidenavelement a:active {
@@ -81,7 +100,7 @@
 
 .left-section {
   flex: 45%;
-  background: linear-gradient(110deg, rgb(249, 238, 128) 75%, transparent 50%);
+  background: linear-gradient(107deg, rgb(249, 238, 128) 75%, transparent 50%);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -96,9 +115,14 @@
 
 .carousel-title {
   margin: 0;
-  padding: 2rem;
-  font-size: 4em;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  font-size: 6em;
   font-family: "Quatsch";
+  text-align: left;
+  color: rgb(74, 74, 74);
 }
 
 .carousel-button {
@@ -111,6 +135,8 @@
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  font-family: "Quatsch";
+  margin-left: -13rem;
 }
 
 .right-section {
@@ -161,13 +187,14 @@
   display: flex;
   justify-content: center;
   margin-top: 80px;
+  margin-left: -13rem;
 }
 
 .indicator {
   width: 24px;
   height: 24px;
   background-color: transparent;
-  border: 2px solid #000;
+  border: 2px solid rgb(74, 74, 74);
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
@@ -178,7 +205,7 @@
   content: "";
   width: 16px;
   height: 16px;
-  background-color: #000;
+  background-color: rgb(74, 74, 74);
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -321,6 +348,27 @@
   transform: scale(1.2);
 }
 
+.bolsin {
+  position: fixed;
+  bottom: 70px;
+  right: 40px;
+  z-index: 1000;
+}
+
+.bolsin img {
+  width: 7rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.bolsin:hover {
+  transform: scale(1.15);
+}
+
+.bolsin:active {
+  transform: scale(1.15);
+  filter: brightness(140%);
+}
+
 .footer {
   background-color: rgb(249, 238, 128);
   height: 150px;
@@ -352,7 +400,7 @@
 
 .social-image:active {
   transform: scale(1.15);
-  filter: brightness(115%);
+  filter: brightness(120%);
 }
 
 .bannerProducts {
@@ -393,7 +441,36 @@
 .swal2-popup {
   background-color: rgba(247, 235, 172, 0.947) !important;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-family: "Quatsch";
+}
+
+.swal2-confirm {
+  font-family: "Quatsch";
+}
+
+.swal2-cancel {
+  font-family: "Quatsch";
+}
+
+.bolsin {
+  position: fixed;
+  bottom: 70px;
+  right: 40px;
+  z-index: 1000;
+}
+
+.bolsin img {
+  width: 7rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.bolsin:hover {
+  transform: scale(1.15);
+}
+
+.bolsin:active {
+  transform: scale(1.15);
+  filter: brightness(140%);
 }
 
 @keyframes scroll {
@@ -564,5 +641,165 @@
 
 @font-face {
   font-family: "Quatsch";
-  src: url("../../assets/font/QuatschDEMO.otf") format("truetype");
+  src: url("../assets/font/QuatschDEMO.otf") format("truetype");
+}
+.banner-about-div {
+  background: linear-gradient(180deg, #F9EE80 10.39%, #FFFCDB 107.97%);
+  display: flex;
+  margin-bottom: -7px;
+}
+
+.banner-about {
+  max-width: 100%;
+}
+
+.banner-story {
+  display: flex;
+}
+
+.banner-story-img {
+  max-width: 100%;
+  margin-bottom: -12rem;
+}
+
+.about-body {
+  background-image: url("https://i.ibb.co/F7vps9X/fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.about-section1 {
+  padding-top: 3rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.quienes-tittle {
+  max-width: 50%;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+}
+
+.about-text1 {
+  flex: 1;
+  padding-right: 20px;
+  color: #404041;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Ubuntu;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.img-quienes {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  max-width: 50%;
+}
+
+.nuestros-tittle {
+  max-width: 90%;
+  padding-right: 17rem;
+  margin-top: -12rem;
+}
+
+.text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.img-container {
+  flex: 1;
+  max-width: 50%;
+}
+
+.img-quienes2 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-right: 6rem;
+  width: 100%;
+}
+
+.about-text2 {
+  color: #404041;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Ubuntu;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  margin-right: 4rem;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.recuerdos-img {
+  max-width: 50%;
+  padding-left: 6rem;
+}
+
+.about-text3 {
+  padding: 0 20px;
+  color: #404041;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Ubuntu;
+  font-size: 2rem;
+  line-height: 3rem;
+  padding-left: 4rem;
+  padding-right: 7rem;
+}
+
+.container4 {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.recuerdos-tittle {
+  margin-left: auto;
+  display: block;
+  max-width: 50%;
+  margin-bottom: -16rem;
+}
+
+.otakus {
+  margin-top: 6rem;
+  max-width: 70%;
+  margin-bottom: -10rem;
+  z-index: 1000;
+  position: relative;
+  margin-left: 4rem;
+}
+
+.about-text {
+  color: #404041;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Ubuntu;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  margin-right: 4rem;
+}
+
+.otakusimg {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-right: 6rem;
+  width: 100%;
+  z-index: -2;
 }/*# sourceMappingURL=styles.css.map */

@@ -13,7 +13,7 @@
 
 .left-section {
     flex: 45%;
-    background: linear-gradient(110deg, rgba(249, 238, 128, 1) 75%, transparent 50%);
+    background: linear-gradient(107deg, rgba(249, 238, 128, 1) 75%, transparent 50%);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -28,9 +28,14 @@
 
 .carousel-title {
     margin: 0;
-    padding: 2rem;
-    font-size: 4em;
-    font-family: 'Quatsch',
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    font-size: 6em;
+    font-family: 'Quatsch';
+    text-align: left;
+    color: rgba(74, 74, 74, 1);
 }
 
 .carousel-button {
@@ -43,6 +48,8 @@
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    font-family: 'Quatsch';
+    margin-left: -13rem;
 }
 
 .right-section {
@@ -91,14 +98,15 @@
 #carousel-indicators {
     display: flex;
     justify-content: center;
-    margin-top: 80px
+    margin-top: 80px;
+    margin-left: -13rem;
 }
 
 .indicator {
     width: 24px;
     height: 24px;
     background-color: transparent;
-    border: 2px solid #000;
+    border: 2px solid rgba(74, 74, 74, 1);
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
@@ -109,7 +117,7 @@
     content: '';
     width: 16px;
     height: 16px;
-    background-color: #000;
+    background-color: rgba(74, 74, 74, 1);
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -248,4 +256,39 @@
 
 .imgGalery:hover {
 transform: scale(1.2);
+}
+
+.bolsin {
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    z-index: 1000;
+}
+
+.bolsin img {
+    width: 7rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.bolsin:hover {
+    transform: scale(1.15);
+}
+
+
+.bolsin:active {
+    transform: scale(1.15);
+    filter: brightness(140%); 
+}
+@media (max-width: 576px) {
+    
+}
+
+
+@media (max-width: 768px) {
+    
+}
+
+
+@media (max-width: 992px) {
+
 }
