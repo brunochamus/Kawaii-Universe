@@ -86,6 +86,35 @@
   color: rgb(240, 213, 0);
 }
 
+.flechin {
+  position: fixed;
+  top: 40vh;
+  left: 0;
+  display: block;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.flechin img {
+  max-height: 10vh;
+  transition: transform 0.3s ease;
+}
+
+#flechinHover {
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+.flechin:hover #flechinHover {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.flechin:hover #flechinImg {
+  display: none;
+  transition: transform 0.3s ease;
+}
+
 .banner-index {
   width: 100%;
   height: auto;
@@ -137,6 +166,15 @@
   border-radius: 5px;
   font-family: "Quatsch";
   margin-left: -13rem;
+}
+
+a.carousel-button:hover {
+  transform: scale(1.15) !important;
+}
+
+a.carousel-button:active {
+  transform: scale(1.15) !important;
+  color: rgb(240, 213, 0) !important;
 }
 
 .right-section {
@@ -441,6 +479,14 @@
     text-decoration: none;
     border-radius: 5px;
     font-family: "Quatsch";
+    transition: transform 0.3s ease;
+  }
+  .custom-carousel-button:hover {
+    transform: scale(1.15) !important;
+  }
+  .custom-carousel-button:active {
+    transform: scale(1.15) !important;
+    color: rgb(240, 213, 0) !important;
   }
   .custom-carousel-container {
     width: 100%;
@@ -604,6 +650,21 @@
   filter: brightness(120%);
 }
 
+@media (max-width: 768px) {
+  .social-image1 {
+    margin: 2vw;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .footer {
+    height: 100px !important;
+  }
+  .social-image {
+    margin: 2vw;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 .bannerProducts {
   background: linear-gradient(180deg, #F9EE80 10.39%, #FFFCDB 107.97%);
   display: flex;
@@ -916,7 +977,7 @@
 .nuestros-tittle {
   max-width: 90%;
   padding-right: 17rem;
-  margin-top: -12rem;
+  margin-top: 0;
 }
 
 .text-container {
@@ -984,13 +1045,11 @@
   margin-left: auto;
   display: block;
   max-width: 50%;
-  margin-bottom: -16rem;
 }
 
 .otakus {
   margin-top: 6rem;
   max-width: 70%;
-  margin-bottom: -10rem;
   z-index: 1000;
   position: relative;
   margin-left: 4rem;

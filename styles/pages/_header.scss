@@ -78,3 +78,31 @@ to {
 .slidenavelement a:active {
     color: rgba(240, 213, 0, 1);
 }
+
+.flechin {
+    position: fixed;
+    top: 40vh;
+    left: 0;
+    display: block;
+    text-decoration: none;
+    transition: transform 0.3s ease
+}
+.flechin img{
+    max-height: 10vh;
+    transition: transform 0.3s ease
+}
+
+#flechinHover {
+    display: none;
+    transition: transform 0.3s ease
+}
+
+.flechin:hover #flechinHover {
+    display: block;
+    transition: transform 0.3s ease
+}
+
+.flechin:hover #flechinImg {
+    display: none;
+    transition: transform 0.3s ease
+}

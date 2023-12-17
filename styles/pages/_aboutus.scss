@@ -56,7 +56,7 @@
 .nuestros-tittle{
     max-width: 90%;
     padding-right: 17rem;
-    margin-top:-12rem;
+    margin-top:0;
 }
 
 .text-container {
@@ -123,12 +123,10 @@
     margin-left: auto;
     display: block;
     max-width: 50%;
-    margin-bottom: -16rem;
 }
 .otakus{
     margin-top: 6rem;
     max-width: 70%;
-    margin-bottom: -10rem;
     z-index: 1000;
     position: relative;
     margin-left: 4rem;
@@ -150,6 +148,8 @@
     width: 100%;
     z-index: -2;
 }
+
+
 @media (max-width: 576px) {
     p {
         font-size: 1rem;

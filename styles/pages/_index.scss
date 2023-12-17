@@ -52,6 +52,15 @@
     margin-left: -13rem;
 }
 
+a.carousel-button:hover{
+    transform: scale(1.15)!important;
+}
+
+a.carousel-button:active{
+    transform: scale(1.15)!important;
+    color: rgba(240, 213, 0, 1)!important;
+}
+
 .right-section {
     flex: 55%;
     overflow: hidden;
@@ -362,6 +371,16 @@ transform: scale(1.2);
         text-decoration: none;
         border-radius: 5px;
         font-family: 'Quatsch';
+        transition: transform 0.3s ease;
+    }
+
+    .custom-carousel-button:hover{
+        transform: scale(1.15)!important;
+    }
+
+    .custom-carousel-button:active{
+        transform: scale(1.15)!important;
+        color: rgba(240, 213, 0, 1)!important;
     }
     
     .custom-carousel-container {

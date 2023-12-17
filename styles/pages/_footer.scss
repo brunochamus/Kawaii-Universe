@@ -33,3 +33,19 @@
     transform: scale(1.15);
     filter: brightness(120%); 
 }
+
+@media (max-width: 768px) {
+    .social-image1{
+        margin:2vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .footer{
+        height: 100px!important;
+    }
+    .social-image{
+        margin:2vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
