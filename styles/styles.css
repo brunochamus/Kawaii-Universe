@@ -331,42 +331,173 @@ body, html {
   width: 100%;
   height: auto;
   display: block;
+  margin: 0;
 }
 .top-10-manga #deploy-btn {
   position: absolute;
   top: 60%;
   left: 75%;
   transform: translate(-50%, -50%);
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
-#card-content {
+#card-content-fixed {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
 }
-#card-content img {
+#card-content-fixed img {
   height: 460px;
   width: auto;
   margin: 70px 80px 70px 50px;
+}
+#card-content-fixed .card-text-fixed {
+  width: 60%;
+}
+#card-content-fixed .card-text-fixed h3 {
+  font-size: 2rem;
+  margin: 105px 0px 0px 150px;
+  color: #2BBA9F;
+  font-size: 60px;
+}
+#card-content-fixed .card-text-fixed p {
+  width: 80%;
+  font-size: 30px;
+  margin: 10px 0px 0px 150px;
+}
+
+#card-content {
+  justify-content: space-between;
+  overflow: hidden;
+}
+#card-content .card {
+  display: none;
+}
+#card-content img {
+  height: 460px;
+  width: auto;
+  margin: 30px 10px 70px 200px;
 }
 #card-content .card-text {
   width: 60%;
 }
 #card-content .card-text h3 {
   font-size: 2rem;
-  margin: 105px 0px 0px 150px;
+  margin: 80px 0px 0px 150px;
   color: #2BBA9F;
   font-size: 60px;
 }
 #card-content .card-text p {
   width: 80%;
   font-size: 30px;
+  margin: 0px 0px 0px 150px;
+}
+
+.top-10-anime {
+  position: relative;
+}
+.top-10-anime img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+.top-10-anime #anime-btn {
+  position: absolute;
+  top: 67%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#anime-cont-fix {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+#anime-cont-fix img {
+  height: 460px;
+  width: auto;
+  margin: 70px 80px 70px 50px;
+}
+#anime-cont-fix .text-anime-fix {
+  width: 60%;
+}
+#anime-cont-fix .text-anime-fix h3 {
+  font-size: 2rem;
+  margin: 105px 0px 0px 150px;
+  color: #2BBA9F;
+  font-size: 60px;
+}
+#anime-cont-fix .text-anime-fix p {
+  width: 80%;
+  font-size: 30px;
   margin: 10px 0px 0px 150px;
 }
 
-#cart.content.hidden {
+#cont-anime-takeoff {
+  justify-content: space-between;
+  overflow: hidden;
+}
+#cont-anime-takeoff .card-anime-takeoff {
   display: none;
+}
+#cont-anime-takeoff img {
+  height: 460px;
+  width: auto;
+  margin: 30px 10px 70px 200px;
+}
+#cont-anime-takeoff .text-anime-takeoff {
+  width: 60%;
+}
+#cont-anime-takeoff .text-anime-takeoff h3 {
+  font-size: 2rem;
+  margin: 80px 0px 0px 150px;
+  color: #2BBA9F;
+  font-size: 60px;
+}
+#cont-anime-takeoff .text-anime-takeoff p {
+  width: 80%;
+  font-size: 30px;
+  margin: 0px 0px 0px 150px;
+}
+
+.recommendations .banner-rec {
+  width: 100%;
+  height: auto;
+}
+.recommendations h3 {
+  font-size: 35px;
+  margin: 20px 110px;
+}
+.recommendations .list-recommendations {
+  display: flex;
+  justify-content: space-between;
+}
+.recommendations .list-recommendations img {
+  height: 500px;
+}
+.recommendations .list-recommendations .tips p {
+  font-size: 32px;
+  margin: 70px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 70px;
+}
+.recommendations .list-recommendations .tips p .number {
+  position: absolute;
+  font-size: 90px;
+  left: 0px;
+}
+.recommendations .friend {
+  font-size: 3rem;
+  text-align: center;
+  margin: 30px 290px 60px 290px;
 }
 
 @keyframes scroll {
