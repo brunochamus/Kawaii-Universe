@@ -46,12 +46,14 @@
     }
 }
 
+//Manga
 .top-10-manga{
     position: relative;
     img{
         width: 100%;
         height: auto;
         display: block;
+        margin: 0;
     }
 
     #deploy-btn{
@@ -59,12 +61,14 @@
         top: 60%; 
         left: 75%; 
         transform: translate(-50%, -50%);
+        background: none;
+        border: none;
         cursor: pointer;
     }
-    
 }
 
-#card-content{
+//Card fija manga
+#card-content-fixed{
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -75,7 +79,7 @@
         margin: 70px 80px 70px 50px;
     }
 
-    .card-text{
+    .card-text-fixed{
         width: 60%;
 
         h3{
@@ -92,6 +96,160 @@
     }
 }
 
-#cart.content.hidden{
-    display: none;
+//Cards desplegables manga
+#card-content{
+    justify-content: space-between;
+    overflow: hidden;
+
+    .card{
+        display: none;
+    }
+
+    img{
+        height: 460px;
+        width: auto;
+        margin: 30px 10px 70px 200px;
+    }
+
+    .card-text{
+        width: 60%;
+
+        h3{
+            font-size: 2rem;
+            margin: 80px 0px 0px 150px;
+            color: #2BBA9F;
+            font-size: 60px;
+        }
+        p{
+            width: 80%;
+            font-size: 30px;
+            margin: 0px 0px 0px 150px;
+        }
+    }
+}
+
+
+//Anime
+.top-10-anime{
+    position: relative;
+    img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0;
+    }
+
+    #anime-btn{
+        position: absolute; 
+        top: 67%; 
+        left: 80%; 
+        transform: translate(-50%, -50%);
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+//Card fija anime
+#anime-cont-fix{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    img{
+        height: 460px;
+        width: auto;
+        margin: 70px 80px 70px 50px;
+    }
+
+    .text-anime-fix{
+        width: 60%;
+
+        h3{
+            font-size: 2rem;
+            margin: 105px 0px 0px 150px;
+            color: #2BBA9F;
+            font-size: 60px;
+        }
+        p{
+            width: 80%;
+            font-size: 30px;
+            margin: 10px 0px 0px 150px;
+        }
+    }
+}
+
+//Cards desplegables anime
+#cont-anime-takeoff{
+    justify-content: space-between;
+    overflow: hidden;
+
+    .card-anime-takeoff{
+        display: none;
+    }
+
+    img{
+        height: 460px;
+        width: auto;
+        margin: 30px 10px 70px 200px;
+    }
+
+    .text-anime-takeoff{
+        width: 60%;
+
+        h3{
+            font-size: 2rem;
+            margin: 80px 0px 0px 150px;
+            color: #2BBA9F;
+            font-size: 60px;
+        }
+        p{
+            width: 80%;
+            font-size: 30px;
+            margin: 0px 0px 0px 150px;
+        }
+    }
+}
+
+//Recomendations
+.recommendations{
+    .banner-rec{
+        width: 100%;
+        height: auto;
+    }
+
+    h3{
+        font-size: 35px;
+        margin: 20px 110px;
+    }
+
+    .list-recommendations{
+        display: flex;
+        justify-content: space-between;
+        img{
+            height: 500px;
+        }
+
+        .tips{
+            p{
+                font-size: 32px;
+                margin: 70px ;
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding-left: 70px;
+                .number{
+                    position: absolute;
+                    font-size: 90px;
+                    left: 0px;
+                }
+            }
+        }
+    }
+
+    .friend{
+        font-size: 3rem;
+        text-align: center;
+        margin: 30px 290px 60px 290px;
+    }
 }

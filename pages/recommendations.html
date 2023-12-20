@@ -10,7 +10,7 @@
 
 <body class="body-recommendations">
     <header class="banner">
-        <img src="https://i.ibb.co/VHbdpqb/header-png.png" alt="header-png" >
+        <img src="https://i.ibb.co/VHbdpqb/header-png.png" alt="header-png">
     </header>
 
     <div class="scroller" data-direction="left" data-speed="fast">
@@ -38,27 +38,85 @@
         </div>
     </div>
 
+<!--Top Manga-->>
     <section class="top-10-manga">
-        <img src="https://i.ibb.co/tDwPN1f/Top-10-Manga.png" alt="Top-10-Manga">
-        <a id="deploy-btn" onclick="showHide()"><svg class="deploy-btn" xmlns="http://www.w3.org/2000/svg" width="92" height="92"
-        viewBox="0 0 92 92" fill="none">
-        <path d="M33 38.3333L52.1667 57.4999L71.3333 38.3333" stroke="#F05A71" stroke-width="8"
-        stroke-linecap="round" stroke-linejoin="round" />
-        </svg></a>
+        <img src="https://i.ibb.co/7KxNT0c/Top-10-Manga.png" alt="Top-10-Manga">
+        <button onclick="showHideManga()" id="deploy-btn" class="deploy-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92" fill="none">
+                <path d="M33 38.3333L52.1667 57.4999L71.3333 38.3333" stroke="#F05A71" stroke-width="8"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
     </section>
-        <div id="card-content">
-            <div class="card-text">
+    <!--Card fija manga-->
+    <div id="card-content-fixed">
+            <div class="card-text-fixed">
                 <h3>Re:Monster</h3>
                 <p>Re:Monster, de género isekai, cuenta la historia de un chico que muere y revive en el cuerpo de un
-                goblin pero con los recuerdos y habilidades de su anterior vida.</p>
+                    goblin pero con los recuerdos y habilidades de su anterior vida.</p>
                 <p>Lo que más nos gustó de este manga fue su originalidad. Realmente destaca dentro del género, lo cual
-                lo
-                hace muy entretenido y único. Además, tiene una gran variedad de personajes y se centra mucho en la
-                evolución del protagonista.</p>
+                    lo
+                    hace muy entretenido y único. Además, tiene una gran variedad de personajes y se centra mucho en la
+                    evolución del protagonista.</p>
+                </div>
+        <img src="https://i.ibb.co/vmN3xrj/Re-monster-Vol-2-by-Kanekiru-Kogitsune-Paperback-Indigo-Chapters.jpg"
+            alt="re:monster">
+    </div>
+    <!--Cards generadas manga-->
+    <div id="card-content">
+        <div class="card">
+            <div class="card-text">
             </div>
-            <img src="https://i.ibb.co/vmN3xrj/Re-monster-Vol-2-by-Kanekiru-Kogitsune-Paperback-Indigo-Chapters.jpg"
-                alt="re:monster">
         </div>
+    </div>
+
+
+<!--Top Anime-->
+    <section class="top-10-anime">
+        <img src="https://i.ibb.co/2d1n4jw/Frame-33.png" alt="Top-10-anime">
+        <button onclick="showHideAnime()" id="anime-btn" class="anime-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92" fill="none">
+                <path d="M26.833 38.3333L45.9997 57.4999L65.1663 38.3333" stroke="#2BBA9F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+        </button>
+    </section>
+    <!--Card fija anime-->
+    <div id="anime-cont-fix">
+            <div class="text-anime-fix">
+                <h3>Dr. Stone</h3>
+                <p>Nuestra primera recomendación es un shonen totalmente alucinante. Cuenta la historia de Senku, un científico que debe buscar la forma de volver a crear nuevamente la civilización luego de que todo en la faz de la tierra se petrificara. Es tan sencillo que da la sensación de que todos podemos hacer ciencia.</p>
+                <p>¡En casa esperamos ansiosos temporada tras temporada!</p>
+                </div>
+        <img src="https://i.ibb.co/JBsWVw7/Dr-Stone-Key-Visual.jpg"
+            alt="dr.stone">
+    </div>
+    <!--Cards generadas anime-->
+    <div id="cont-anime-takeoff">
+        <div class="card-anime-takeoff">
+            <div class="text-anime-takeoff">
+            </div>
+        </div>
+    </div>
+
+    <!--Recomendaciones-->
+    <div class="recommendations">
+        <img src="https://i.ibb.co/CMcyrkG/Group-195.png" class="banner-rec" alt="recommendation">
+        <h3>Nuestras recomendaciones:</h3>
+        <div class="list-recommendations">
+            <div class="tips">
+            <p><span class="number">1</span> Llevá ropa cómoda.</p>
+            <p><span class="number">2</span> Tené siempre agua o algún refresco para hidratarte.</p>
+            <p><span class="number">3</span> Aunque sea invierno, te recomendamos llevar una remera de manga corta debajo de tu abrigo, ya que suele hacer mucho calor dentro de las instalaciones.</span>
+            <p><span class="number">4</span> Mirá el cronograma de actividades para no perderte nada.</p>
+            <p><span class="number">5</span> Llevá contigo papel higiénico en caso de que en los baños se haya acabado.</p>
+            <p><span class="number">6</span> Llevá algo de dinero para poder comprar recuerdos y algunos productos que te gusten de los stands.</p>
+        </div>
+            <img src="https://i.ibb.co/ckF73YG/pngwing-9.png" alt="recommendations">
+        </div>
+        <p class="friend">¡Ahora ya podés disfrutar de una experiencia maravillosa y conocer nuevos amigos!</p>
+    </div>
+
+
 
     <footer class="footer">
         <div class="social">
