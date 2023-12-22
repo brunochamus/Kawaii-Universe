@@ -140,3 +140,26 @@ function showHideAnime() {
         cards.style.display = (cards.style.display === 'none' || cards.style.display === '') ? 'flex' : 'none';
     });
 }
+
+//Ver mas cards mobile
+const cardContainers = document.querySelectorAll('.text-container');
+
+cardContainers.forEach(container => {
+    const hiddenText = container.querySelector('.hidden-text');
+    const showMoreButton = container.querySelector('.show-more-button');
+    const scrollXContainer = container.closest('.scroll-x'); // Encontrar el contenedor .scroll-x más cercano
+
+    showMoreButton.addEventListener('click', function () {
+        if (hiddenText.style.maxHeight) {
+            hiddenText.style.maxHeight = null;
+            showMoreButton.textContent = 'Ver mas';
+            // Restaurar la altura del contenedor .scroll-x
+            scrollXContainer.style.height = '50rem';
+        } else {
+            hiddenText.style.maxHeight = hiddenText.scrollHeight + 'px';
+            showMoreButton.textContent = 'Ver menos';
+            // Ajustar la altura del contenedor .scroll-x para adaptarse al contenido expandido
+            scrollXContainer.style.height = scrollXContainer.scrollHeight + hiddenText.scrollHeight + 'px';
+        }
+    });
+});

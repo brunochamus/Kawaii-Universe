@@ -34,7 +34,7 @@
 }
 
 .body-faq {
-    background-image: url(https://i.ibb.co/ZVwTMK2/fondo.png);
+    background-image: url(https://i.ibb.co/8r8kmfv/fondo.png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -80,8 +80,8 @@
         }
 
         .drop-shipping{
-            margin: -6.8rem 0px 0px 15rem;
-            height: 85px;
+            margin: -7.8rem 0px 0px 10rem;
+            height: 75px;
         }
 
         .monedas{
@@ -92,6 +92,102 @@
         .regalo{
             margin: -10.3rem 0px 0px 39rem;
             height: 60px;
+        }
+        
+        .drop-shipping-2{
+            margin: -9rem 0px 0px 43rem;
+            height: 85px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .preguntas-frecuentes {
+        .pregunta {
+            p {
+                font-size: 18px !important;
+            }
+            .reloj{
+                margin: -110px 0px 0px 9rem;
+                height: 40px;
+            }
+    
+            .casa{
+                margin: -11rem 0px 0px 21rem;
+                height: 35px;
+            }
+    
+            .drop-shipping{
+                margin: -9.7rem 0px 0px 11.5rem;
+                height: 50px;
+            }
+    
+            .monedas{
+                margin: -9.5rem 0px 0px 23rem;
+                height: 40px;
+            }
+    
+            .regalo{
+                margin: -17.3rem 0px 0px 12rem;
+                height: 35px;
+            }
+            
+            .drop-shipping-2{
+                margin: -11.2rem 0px 0px 15rem;
+                height: 55px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .pregunta {
+        .reloj{
+            margin: -87px 0px 0px 36rem !important;
+            height: 50px !important;
+        }
+
+        .casa{
+            margin: -9rem 0px 0px 20rem !important;
+            height: 45px !important;
+        }
+
+        .drop-shipping{
+            margin: -8.5rem 0px 0px 11rem !important;
+            height: 68px !important;
+        }
+
+        .monedas{
+            margin: -8rem 0px 0px 23rem !important;
+            height: 55px !important;
+        }
+
+        .regalo{
+            margin: -14.4rem 0px 0px 37rem !important;
+            height: 55px !important;
+        }
+        
+        .drop-shipping-2{
+            margin: -12.5rem 0px 0px 38rem !important;
+            height: 65px !important;
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+    .pregunta {
+        .drop-shipping{
+            margin: -8.7rem 0px 0px 11rem !important;
+        }
+
+        .monedas{
+            margin: -7.9rem 0px 0px 23rem !important;
+        }
+
+        .regalo{
+            margin: -12.7rem 0px 0px 39rem !important;
         }
         
         .drop-shipping-2{

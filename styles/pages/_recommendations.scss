@@ -34,7 +34,7 @@
 }
 
 .body-recommendations {
-    background-image: url(https://i.ibb.co/ZVwTMK2/fondo.png);
+    background-image: url(https://i.ibb.co/8r8kmfv/fondo.png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -58,12 +58,16 @@
 
     #deploy-btn{
         position: absolute; 
-        top: 60%; 
-        left: 75%; 
-        transform: translate(-50%, -50%);
+        top: 45%; 
+        left: 73%; 
         background: none;
         border: none;
         cursor: pointer;
+        transition: transform 0.3s ease-out;
+    }
+
+    #deploy-btn:hover{
+        transform: scale(1.3);
     }
 }
 
@@ -83,12 +87,15 @@
         width: 60%;
 
         h3{
+            font-family: 'Quatsch';
+            font-weight: 100;
             font-size: 2rem;
             margin: 105px 0px 0px 150px;
             color: #2BBA9F;
             font-size: 60px;
         }
         p{
+            font-family: 'Ubuntu', sans-serif;
             width: 80%;
             font-size: 30px;
             margin: 10px 0px 0px 150px;
@@ -108,19 +115,22 @@
     img{
         height: 460px;
         width: auto;
-        margin: 30px 10px 70px 200px;
+        margin: 70px 10px 70px 200px;
     }
 
     .card-text{
         width: 60%;
 
         h3{
+            font-family: 'Quatsch';
+            font-weight: 100;
             font-size: 2rem;
             margin: 80px 0px 0px 150px;
             color: #2BBA9F;
             font-size: 60px;
         }
         p{
+            font-family: 'Ubuntu', sans-serif;
             width: 80%;
             font-size: 30px;
             margin: 0px 0px 0px 150px;
@@ -141,12 +151,16 @@
 
     #anime-btn{
         position: absolute; 
-        top: 67%; 
-        left: 80%; 
-        transform: translate(-50%, -50%);
+        top: 50%; 
+        left: 75%; 
         background: none;
         border: none;
         cursor: pointer;
+        transition: transform 0.3s ease-out;
+    }
+
+    #anime-btn:hover{
+        transform: scale(1.3);
     }
 }
 
@@ -166,12 +180,15 @@
         width: 60%;
 
         h3{
+            font-family: 'Quatsch';
+            font-weight: 100;
             font-size: 2rem;
             margin: 105px 0px 0px 150px;
             color: #2BBA9F;
             font-size: 60px;
         }
         p{
+            font-family: 'Ubuntu', sans-serif;
             width: 80%;
             font-size: 30px;
             margin: 10px 0px 0px 150px;
@@ -198,12 +215,15 @@
         width: 60%;
 
         h3{
+            font-family: 'Quatsch';
+            font-weight: 100;
             font-size: 2rem;
             margin: 80px 0px 0px 150px;
             color: #2BBA9F;
             font-size: 60px;
         }
         p{
+            font-family: 'Ubuntu', sans-serif;
             width: 80%;
             font-size: 30px;
             margin: 0px 0px 0px 150px;
@@ -219,26 +239,33 @@
     }
 
     h3{
-        font-size: 35px;
+        font-size: 40px;
         margin: 20px 110px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 900;
     }
 
     .list-recommendations{
         display: flex;
         justify-content: space-between;
+
         img{
             height: 500px;
         }
 
         .tips{
             p{
+                font-family: 'Ubuntu', sans-serif;
                 font-size: 32px;
                 margin: 70px ;
                 display: flex;
                 align-items: center;
                 position: relative;
-                padding-left: 70px;
+                padding-left: 120px;
+
                 .number{
+                    font-family: Potta One;
+                    color: #F05A71;
                     position: absolute;
                     font-size: 90px;
                     left: 0px;
@@ -248,8 +275,115 @@
     }
 
     .friend{
-        font-size: 3rem;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 900;
+        font-size: 2.5rem;
         text-align: center;
         margin: 30px 290px 60px 290px;
+    }
+}
+
+@media (max-width: 576px) {
+
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 992px) {
+    .body-desktop{
+        display: none;
+    }
+
+    .body-mobile{
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        .scroll-x{
+            background-color: white;
+            height: 49rem;
+            width: 65rem;
+            border-radius: 50px;
+            margin: 10px 90px 10px 10px;
+            display: flex;
+            transition: all 0.3s ease;
+
+            .cardX{
+                text-align: center;
+                position: relative;
+                width: 30rem;
+
+                h1{
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 2.5rem;
+                    margin: 40px 10px 40px 10px;
+                }
+                .anime-border{
+                    height: 30rem;
+                    border: #2BBA9F 5px solid;
+                    border-radius: 5%;
+                    
+                }
+                .number-anime{
+                    font-size: 12rem;
+                    font-family: Potta One;
+                    color: #2BBA9F;
+                    position: absolute;
+                    left: 1.2rem;
+                    top: 21rem;
+                }
+                .manga-border{
+                    height: 30rem;
+                    border: #F05A71 5px solid;
+                    border-radius: 5%;
+                    
+                }
+                .number-manga{
+                    font-size: 12rem;
+                    font-family: Potta One;
+                    color: #F05A71;
+                    position: absolute;
+                    left: 1.2rem;
+                    top: 21rem;
+                }
+
+                .text-mobile{
+                    font-size: 19px;
+                    margin: 30px 30px 3px 30px;
+                    font-family: Ubuntu;
+                    position: relative;
+                    position: absolute;
+
+                    .hidden-text{
+                        max-height: 100px;
+                        overflow: hidden;
+                        transition: max-height 0.3s ease;
+                    }
+
+                    .show-more-button{
+                        width: 6rem;
+                        padding: 5px 10px;
+                        display: block;
+                        margin: 10px auto;
+                        cursor: pointer;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .list-recommendations{
+        img{
+            display: none;
+        }
     }
 }
