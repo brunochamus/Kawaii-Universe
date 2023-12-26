@@ -984,15 +984,125 @@ a.carousel-button:active {
   margin: 30px 290px 60px 290px;
 }
 
+@media (min-width: 993px) {
+  .banner .icons-mobile {
+    display: none;
+  }
+  .body-mobile {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .body-mobile .scroll-x {
+    margin: 10px 90px 10px 45px !important;
+  }
+  .body-mobile .scroll-x .cardX .text-mobile .hidden-text {
+    font-size: 17px !important;
+  }
+}
+@media (max-width: 768px) {
+  .body-mobile .scroll-x {
+    height: 44rem !important;
+    width: 35rem !important;
+  }
+  .body-mobile .scroll-x .cardX h1 {
+    font-size: 1.8rem !important;
+    margin: 20px 10px 20px 10px !important;
+  }
+  .body-mobile .scroll-x .cardX img {
+    height: 25rem !important;
+  }
+  .body-mobile .scroll-x .cardX span {
+    font-size: 11rem !important;
+    left: 3rem !important;
+    top: 15.1rem !important;
+  }
+  .body-mobile .scroll-x .cardX .text-mobile {
+    font-size: 15px !important;
+    margin: 30px 30px 3px 30px;
+    font-family: Ubuntu;
+    position: relative;
+    position: absolute;
+  }
+  .body-mobile .scroll-x .cardX .text-mobile .show-more-button {
+    width: 6rem;
+    padding: 5px 10px;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  .recommendations h3 {
+    font-size: 1.8rem !important;
+  }
+  .friend {
+    font-size: 1.5rem !important;
+    text-align: center;
+    margin: 30px 190px 60px 190px !important;
+  }
+}
 @media (max-width: 992px) {
   .body-desktop {
     display: none;
   }
+  .nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.ibb.co/tCC0Ysd/fondo-hamburger.jpg);
+    z-index: 1000;
+  }
+  .nav img {
+    max-width: 30%;
+    height: auto;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .nav.menu-open img {
+    opacity: 1;
+  }
+  .nav-list {
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .nav-list li {
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-family: "Quatsch";
+    color: #7469C7;
+  }
+  .nav-list a {
+    text-decoration: none;
+  }
+  .open-menu {
+    display: block;
+    font-size: 3rem;
+    color: #424040;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    z-index: 1001;
+  }
+  .close-menu {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    font-size: 3rem;
+  }
   .body-mobile {
     height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
     overflow-x: auto;
     overflow-y: hidden;
   }
@@ -1062,8 +1172,22 @@ a.carousel-button:active {
     border: none;
     outline: none;
   }
-  .list-recommendations img {
+  .recommendations h3 {
+    font-size: 2.2rem !important;
+  }
+  .recommendations .list-recommendations .tips p {
+    font-size: 22px !important;
+  }
+  .recommendations .list-recommendations .tips p .number {
+    font-size: 70px !important;
+  }
+  .recommendations .list-recommendations img {
     display: none;
+  }
+  .friend {
+    font-size: 1.5rem !important;
+    text-align: center;
+    margin: 30px 290px 60px 290px;
   }
 }
 @keyframes scroll {

@@ -1,4 +1,3 @@
-
 @keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
@@ -47,46 +46,47 @@
 }
 
 //Manga
-.top-10-manga{
+.top-10-manga {
     position: relative;
-    img{
+
+    img {
         width: 100%;
         height: auto;
         display: block;
         margin: 0;
     }
 
-    #deploy-btn{
-        position: absolute; 
-        top: 45%; 
-        left: 73%; 
+    #deploy-btn {
+        position: absolute;
+        top: 45%;
+        left: 73%;
         background: none;
         border: none;
         cursor: pointer;
         transition: transform 0.3s ease-out;
     }
 
-    #deploy-btn:hover{
+    #deploy-btn:hover {
         transform: scale(1.3);
     }
 }
 
 //Card fija manga
-#card-content-fixed{
+#card-content-fixed {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
 
-    img{
+    img {
         height: 460px;
         width: auto;
         margin: 70px 80px 70px 50px;
     }
 
-    .card-text-fixed{
+    .card-text-fixed {
         width: 60%;
 
-        h3{
+        h3 {
             font-family: 'Quatsch';
             font-weight: 100;
             font-size: 2rem;
@@ -94,7 +94,8 @@
             color: #2BBA9F;
             font-size: 60px;
         }
-        p{
+
+        p {
             font-family: 'Ubuntu', sans-serif;
             width: 80%;
             font-size: 30px;
@@ -104,24 +105,24 @@
 }
 
 //Cards desplegables manga
-#card-content{
+#card-content {
     justify-content: space-between;
     overflow: hidden;
 
-    .card{
+    .card {
         display: none;
     }
 
-    img{
+    img {
         height: 460px;
         width: auto;
         margin: 70px 10px 70px 200px;
     }
 
-    .card-text{
+    .card-text {
         width: 60%;
 
-        h3{
+        h3 {
             font-family: 'Quatsch';
             font-weight: 100;
             font-size: 2rem;
@@ -129,7 +130,8 @@
             color: #2BBA9F;
             font-size: 60px;
         }
-        p{
+
+        p {
             font-family: 'Ubuntu', sans-serif;
             width: 80%;
             font-size: 30px;
@@ -140,46 +142,47 @@
 
 
 //Anime
-.top-10-anime{
+.top-10-anime {
     position: relative;
-    img{
+
+    img {
         width: 100%;
         height: auto;
         display: block;
         margin: 0;
     }
 
-    #anime-btn{
-        position: absolute; 
-        top: 50%; 
-        left: 75%; 
+    #anime-btn {
+        position: absolute;
+        top: 50%;
+        left: 75%;
         background: none;
         border: none;
         cursor: pointer;
         transition: transform 0.3s ease-out;
     }
 
-    #anime-btn:hover{
+    #anime-btn:hover {
         transform: scale(1.3);
     }
 }
 
 //Card fija anime
-#anime-cont-fix{
+#anime-cont-fix {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
 
-    img{
+    img {
         height: 460px;
         width: auto;
         margin: 70px 80px 70px 50px;
     }
 
-    .text-anime-fix{
+    .text-anime-fix {
         width: 60%;
 
-        h3{
+        h3 {
             font-family: 'Quatsch';
             font-weight: 100;
             font-size: 2rem;
@@ -187,7 +190,8 @@
             color: #2BBA9F;
             font-size: 60px;
         }
-        p{
+
+        p {
             font-family: 'Ubuntu', sans-serif;
             width: 80%;
             font-size: 30px;
@@ -197,24 +201,24 @@
 }
 
 //Cards desplegables anime
-#cont-anime-takeoff{
+#cont-anime-takeoff {
     justify-content: space-between;
     overflow: hidden;
 
-    .card-anime-takeoff{
+    .card-anime-takeoff {
         display: none;
     }
 
-    img{
+    img {
         height: 460px;
         width: auto;
         margin: 30px 10px 70px 200px;
     }
 
-    .text-anime-takeoff{
+    .text-anime-takeoff {
         width: 60%;
 
-        h3{
+        h3 {
             font-family: 'Quatsch';
             font-weight: 100;
             font-size: 2rem;
@@ -222,7 +226,8 @@
             color: #2BBA9F;
             font-size: 60px;
         }
-        p{
+
+        p {
             font-family: 'Ubuntu', sans-serif;
             width: 80%;
             font-size: 30px;
@@ -232,38 +237,38 @@
 }
 
 //Recomendations
-.recommendations{
-    .banner-rec{
+.recommendations {
+    .banner-rec {
         width: 100%;
         height: auto;
     }
 
-    h3{
+    h3 {
         font-size: 40px;
         margin: 20px 110px;
         font-family: 'Ubuntu', sans-serif;
         font-weight: 900;
     }
 
-    .list-recommendations{
+    .list-recommendations {
         display: flex;
         justify-content: space-between;
 
-        img{
+        img {
             height: 500px;
         }
 
-        .tips{
-            p{
+        .tips {
+            p {
                 font-family: 'Ubuntu', sans-serif;
                 font-size: 32px;
-                margin: 70px ;
+                margin: 70px;
                 display: flex;
                 align-items: center;
                 position: relative;
                 padding-left: 120px;
 
-                .number{
+                .number {
                     font-family: Potta One;
                     color: #F05A71;
                     position: absolute;
@@ -274,7 +279,7 @@
         }
     }
 
-    .friend{
+    .friend {
         font-family: 'Ubuntu', sans-serif;
         font-weight: 900;
         font-size: 2.5rem;
@@ -283,91 +288,66 @@
     }
 }
 
+@media (min-width: 993px) {
+    .banner {
+        .icons-mobile {
+            display: none;
+        }
+    }
+
+    .body-mobile {
+        display: none;
+    }
+}
+
 @media (max-width: 576px) {
+    .body-mobile {
+        .scroll-x {
+            margin: 10px 90px 10px 45px !important;
+
+            .cardX {
+                .text-mobile {
+                    .hidden-text {
+                        font-size: 17px !important;
+                    }
+                }
+            }
+        }
+    }
 
 }
 
 
 @media (max-width: 768px) {
+    .body-mobile {
+        .scroll-x {
+            height: 44rem !important;
+            width: 35rem !important;
 
-}
-
-
-@media (max-width: 992px) {
-    .body-desktop{
-        display: none;
-    }
-
-    .body-mobile{
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow-x: auto;
-        overflow-y: hidden;
-
-        .scroll-x{
-            background-color: white;
-            height: 49rem;
-            width: 65rem;
-            border-radius: 50px;
-            margin: 10px 90px 10px 10px;
-            display: flex;
-            transition: all 0.3s ease;
-
-            .cardX{
-                text-align: center;
-                position: relative;
-                width: 30rem;
-
-                h1{
-                    font-family: 'Ubuntu', sans-serif;
-                    font-size: 2.5rem;
-                    margin: 40px 10px 40px 10px;
-                }
-                .anime-border{
-                    height: 30rem;
-                    border: #2BBA9F 5px solid;
-                    border-radius: 5%;
-                    
-                }
-                .number-anime{
-                    font-size: 12rem;
-                    font-family: Potta One;
-                    color: #2BBA9F;
-                    position: absolute;
-                    left: 1.2rem;
-                    top: 21rem;
-                }
-                .manga-border{
-                    height: 30rem;
-                    border: #F05A71 5px solid;
-                    border-radius: 5%;
-                    
-                }
-                .number-manga{
-                    font-size: 12rem;
-                    font-family: Potta One;
-                    color: #F05A71;
-                    position: absolute;
-                    left: 1.2rem;
-                    top: 21rem;
+            .cardX {
+                h1 {
+                    font-size: 1.8rem !important;
+                    margin: 20px 10px 20px 10px !important;
                 }
 
-                .text-mobile{
-                    font-size: 19px;
+                img {
+                    height: 25rem !important;
+                }
+
+                span {
+                    font-size: 11rem !important;
+                    left: 3rem !important;
+                    top: 15.1rem !important;
+                }
+
+                .text-mobile {
+                    font-size: 15px !important;
                     margin: 30px 30px 3px 30px;
                     font-family: Ubuntu;
                     position: relative;
                     position: absolute;
 
-                    .hidden-text{
-                        max-height: 100px;
-                        overflow: hidden;
-                        transition: max-height 0.3s ease;
-                    }
-
-                    .show-more-button{
+                    .show-more-button {
                         width: 6rem;
                         padding: 5px 10px;
                         display: block;
@@ -381,9 +361,198 @@
         }
     }
 
-    .list-recommendations{
-        img{
-            display: none;
+    .recommendations {
+        h3 {
+            font-size: 1.8rem !important;
         }
+    }
+
+    .friend {
+        font-size: 1.5rem !important;
+        text-align: center;
+        margin: 30px 190px 60px 190px !important;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .body-desktop {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://i.ibb.co/tCC0Ysd/fondo-hamburger.jpg);
+        z-index: 1000;
+
+        img {
+            max-width: 30%;
+            height: auto;
+            margin-top: 20px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    
+        &.menu-open {
+            img {
+                opacity: 1; // Mostrar la imagen cuando el menú está abierto
+            }
+        }
+    }
+
+    .nav-list {
+        list-style: none !important;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+
+        li {
+            padding: 1.5rem;
+            font-size: 2rem;
+            font-family: "Quatsch";
+            color: #7469C7;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+
+    .open-menu {
+        display: block;
+        font-size: 3rem;
+        color: #424040;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        z-index: 1001;
+    }
+
+    .close-menu {
+        display: none;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        font-size: 3rem;
+    }
+
+    .body-mobile {
+        height: auto;
+        display: flex !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        .scroll-x {
+            background-color: white;
+            height: 49rem;
+            width: 65rem;
+            border-radius: 50px;
+            margin: 10px 90px 10px 10px;
+            display: flex;
+            transition: all 0.3s ease;
+
+            .cardX {
+                text-align: center;
+                position: relative;
+                width: 30rem;
+
+                h1 {
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 2.5rem;
+                    margin: 40px 10px 40px 10px;
+                }
+
+                .anime-border {
+                    height: 30rem;
+                    border: #2BBA9F 5px solid;
+                    border-radius: 5%;
+
+                }
+
+                .number-anime {
+                    font-size: 12rem;
+                    font-family: Potta One;
+                    color: #2BBA9F;
+                    position: absolute;
+                    left: 1.2rem;
+                    top: 21rem;
+                }
+
+                .manga-border {
+                    height: 30rem;
+                    border: #F05A71 5px solid;
+                    border-radius: 5%;
+
+                }
+
+                .number-manga {
+                    font-size: 12rem;
+                    font-family: Potta One;
+                    color: #F05A71;
+                    position: absolute;
+                    left: 1.2rem;
+                    top: 21rem;
+                }
+
+                .text-mobile {
+                    font-size: 19px;
+                    margin: 30px 30px 3px 30px;
+                    font-family: Ubuntu;
+                    position: relative;
+                    position: absolute;
+
+                    .hidden-text {
+                        max-height: 100px;
+                        overflow: hidden;
+                        transition: max-height 0.3s ease;
+                    }
+
+                    .show-more-button {
+                        width: 6rem;
+                        padding: 5px 10px;
+                        display: block;
+                        margin: 10px auto;
+                        cursor: pointer;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .recommendations {
+        h3 {
+            font-size: 2.2rem !important;
+        }
+
+        .list-recommendations {
+            .tips {
+                p {
+                    font-size: 22px !important;
+
+                    .number {
+                        font-size: 70px !important;
+                    }
+                }
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .friend {
+        font-size: 1.5rem !important;
+        text-align: center;
+        margin: 30px 290px 60px 290px;
     }
 }

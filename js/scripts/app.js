@@ -89,6 +89,11 @@ const anime = [
         description: "Shokugeki no Sōma, más comúnmente conocido como Food Wars, es un shonen y ecchi de gastronomía. Comenzamos a verlo en familia, pero resultó no ser apto para niños, así que fue visto por los adultos de la casa. Nos pareció muy divertido, con una historia atrapante y unas luchas gastronómicas que dan hambre y ganas de experimentar platillos raros. Estamos esperando que los chicos estén más a la altura del contenido para poder disfrutarlo en familia.",
         image: "https://i.ibb.co/mDMftmk/Food-Wars-Shokugeki-no-Soma-Vol-1-by-Yuto-Tsukuda-Paperback-Indigo-Chapters.jpg"
     },
+    {
+        title: "Berserk",
+        description: "Guts, un ex mercenario ahora conocido como el Espadachín Negro, busca venganza. Después de una infancia tumultuosa, finalmente encuentra a alguien a quien respeta y en quien cree que puede confiar, solo para que todo se desmorone cuando esta persona le quita todo lo importante a Guts con el fin de cumplir sus propios deseos. Ahora marcado para la muerte, Guts queda condenado a un destino en el que es perseguido implacablemente por seres demoníacos.",
+        image: "https://i.ibb.co/Z839wK8/157897l.jpg"
+    },
 ];
 
 //Funcion para agregar card de tops manga
@@ -162,4 +167,16 @@ cardContainers.forEach(container => {
             scrollXContainer.style.height = scrollXContainer.scrollHeight + hiddenText.scrollHeight + 'px';
         }
     });
+});
+
+document.getElementById('open').addEventListener('click', function () {
+    document.getElementById('nav').style.display = 'block';
+    document.getElementById('open').style.display = 'none';
+    document.getElementById('close').style.display = 'block';
+});
+
+document.getElementById('close').addEventListener('click', function () {
+    document.getElementById('nav').style.display = 'none';
+    document.getElementById('open').style.display = 'block';
+    document.getElementById('close').style.display = 'none';
 });
