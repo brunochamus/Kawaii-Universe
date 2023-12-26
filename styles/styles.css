@@ -984,7 +984,14 @@ a.carousel-button:active {
   margin: 30px 290px 60px 290px;
 }
 
+.img-mobile-l {
+  max-width: 100vw;
+}
+
 @media (min-width: 993px) {
+  .img-mobile-l {
+    display: none;
+  }
   .banner .icons-mobile {
     display: none;
   }

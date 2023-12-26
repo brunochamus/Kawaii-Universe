@@ -288,7 +288,17 @@
     }
 }
 
+.img-mobile-l{
+
+    max-width: 100vw;
+}
+
 @media (min-width: 993px) {
+
+.img-mobile-l{
+    display: none;
+}
+
     .banner {
         .icons-mobile {
             display: none;
