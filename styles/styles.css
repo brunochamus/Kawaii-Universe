@@ -89,7 +89,7 @@
 
 .flechin {
   position: fixed;
-  top: 40vh;
+  top: 60vh;
   left: 0;
   display: block;
   text-decoration: none;
@@ -112,6 +112,35 @@
 }
 
 .flechin:hover #flechinImg {
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+.flechin2 {
+  position: fixed;
+  top: 60vh;
+  left: 0;
+  display: block;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.flechin2 img {
+  max-height: 10vh;
+  transition: transform 0.3s ease;
+}
+
+#flechin2Hover {
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+.flechin2:hover #flechin2Hover {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.flechin2:hover #flechin2Img {
   display: none;
   transition: transform 0.3s ease;
 }
@@ -560,7 +589,7 @@ a.carousel-button:active {
   }
   .third-section1 {
     max-width: 100%;
-    margin-top: 50vh;
+    margin-top: 53vh;
   }
   .bannerGalery1 {
     max-width: 100%;
@@ -578,6 +607,9 @@ a.carousel-button:active {
   }
   .footer {
     height: 100px !important;
+  }
+  .bolsin img {
+    width: 5rem !important;
   }
 }
 @media (min-width: 769px) {
@@ -1225,7 +1257,7 @@ a.carousel-button:active {
 }
 
 .body-faq {
-  background-image: url(https://i.ibb.co/8r8kmfv/fondo.png);
+  background-image: url(https://i.ibb.co/fNY8LZd/kawaii-responde-desktop-1.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1235,6 +1267,10 @@ a.carousel-button:active {
 }
 
 .preguntas-frecuentes {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   margin: 30px 50px 30px 75px;
   font-family: "Ubuntu", sans-serif;
 }
@@ -1385,8 +1421,23 @@ a.carousel-button:active {
 
 .about-section1 {
   padding-top: 3rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.about-section2 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.about-section3 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.about-section4 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .quienes-tittle {
