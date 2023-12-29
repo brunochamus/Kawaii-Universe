@@ -37,6 +37,7 @@
     background-image: url(https://i.ibb.co/fNY8LZd/kawaii-responde-desktop-1.png);
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 
     .banner {
         img {
@@ -70,7 +71,7 @@
             line-height: 33px;
         }
         img{
-            position: absolute; 
+            position: relative; 
         }
 
         .reloj{

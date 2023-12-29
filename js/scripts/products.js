@@ -5,7 +5,7 @@ function mostrarSweetAlert(descripcion, numeroWhatsApp) {
         text: descripcion,
         icon: 'info',
         showCancelButton: true,
-        confirmButtonText: 'Consultanos',
+        confirmButtonText: 'Consultar',
         cancelButtonText: 'Cerrar',
     }).then((result) => {
         if (result.isConfirmed) {

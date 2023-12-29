@@ -33,7 +33,7 @@
 }
 
 .body-recommendations {
-    background-image: url(https://i.ibb.co/8r8kmfv/fondo.png);
+    background-image: url(https://i.ibb.co/6rq59Mp/fondo.png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -43,6 +43,10 @@
             height: auto;
         }
     }
+}
+
+.banner-rinc{
+    z-index: -1000 !important;
 }
 
 //Manga
@@ -291,6 +295,9 @@
 .img-mobile-l{
     max-width: 100vw;
 }
+.imgreco{
+    position: relative;
+}
 
 @media (min-width: 993px) {
 .img-mobile-l{
@@ -325,7 +332,9 @@
             }
         }
     }
-
+    p,.friend{
+        margin:40px !important;
+    }
 }
 
 
@@ -381,7 +390,7 @@
     .friend {
         font-size: 1.5rem !important;
         text-align: center;
-        margin: 30px 190px 60px 190px !important;
+        margin: 30px 190px 60px 190px;
     }
 }
 

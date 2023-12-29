@@ -90,9 +90,9 @@ const anime = [
         image: "https://i.ibb.co/mDMftmk/Food-Wars-Shokugeki-no-Soma-Vol-1-by-Yuto-Tsukuda-Paperback-Indigo-Chapters.jpg"
     },
     {
-        title: "Berserk",
-        description: "Guts, un ex mercenario ahora conocido como el Espadachín Negro, busca venganza. Después de una infancia tumultuosa, finalmente encuentra a alguien a quien respeta y en quien cree que puede confiar, solo para que todo se desmorone cuando esta persona le quita todo lo importante a Guts con el fin de cumplir sus propios deseos. Ahora marcado para la muerte, Guts queda condenado a un destino en el que es perseguido implacablemente por seres demoníacos.",
-        image: "https://i.ibb.co/Z839wK8/157897l.jpg"
+        title: "Fukumenkei Noise",
+        description: "Nos encanta la música, así que no pudimos dejar pasar Fukumenkei Noise, una serie de manga en la que la música y el amor llevan al mismo destino.La protagonista de la historia, Nino, utiliza su canto como señal de guía en la eterna espera de su amor de la infancia.¿Qué sucederá cuando este regrese pero ahora haya alguien más para llenar el vacío de su corazón?Pese a que ya pasaron varios años desde que lo leímos, y gracias a la versión de anime y a su banda sonora, las canciones todavía están muy presentes en nuestras vidas. ¡Tanto es así que aún las tarareamos de vez en cuando!",
+        image: "https://i.ibb.co/929QgPP/Whats-App-Image-2023-12-07-at-21-28.png"
     },
 ];
 
@@ -157,7 +157,7 @@ cardContainers.forEach(container => {
     showMoreButton.addEventListener('click', function () {
         if (hiddenText.style.maxHeight) {
             hiddenText.style.maxHeight = null;
-            showMoreButton.textContent = 'Ver mas';
+            showMoreButton.textContent = 'Ver más';
             // Restaurar la altura del contenedor .scroll-x
             scrollXContainer.style.height = '50rem';
         } else {

@@ -418,7 +418,7 @@ a.carousel-button:active {
 
 .bolsin {
   position: fixed;
-  bottom: 70px;
+  bottom: 30px;
   right: 40px;
   z-index: 1000;
 }
@@ -435,6 +435,10 @@ a.carousel-button:active {
 .bolsin:active {
   transform: scale(1.15);
   filter: brightness(140%);
+}
+
+.banner-index {
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -749,7 +753,7 @@ a.carousel-button:active {
 
 .bolsin {
   position: fixed;
-  bottom: 70px;
+  bottom: 30px;
   right: 40px;
   z-index: 1000;
 }
@@ -860,13 +864,17 @@ a.carousel-button:active {
 }
 
 .body-recommendations {
-  background-image: url(https://i.ibb.co/8r8kmfv/fondo.png);
+  background-image: url(https://i.ibb.co/6rq59Mp/fondo.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .body-recommendations .banner img {
   width: 100%;
   height: auto;
+}
+
+.banner-rinc {
+  z-index: -1000 !important;
 }
 
 .top-10-manga {
@@ -1074,6 +1082,10 @@ a.carousel-button:active {
   max-width: 100vw;
 }
 
+.imgreco {
+  position: relative;
+}
+
 @media (min-width: 993px) {
   .img-mobile-l {
     display: none;
@@ -1094,6 +1106,9 @@ a.carousel-button:active {
   }
   .body-mobile .scroll-x .cardX .text-mobile .hidden-text {
     font-size: 17px !important;
+  }
+  p, .friend {
+    margin: 40px !important;
   }
 }
 @media (max-width: 768px) {
@@ -1135,7 +1150,7 @@ a.carousel-button:active {
   .friend {
     font-size: 1.5rem !important;
     text-align: center;
-    margin: 30px 190px 60px 190px !important;
+    margin: 30px 190px 60px 190px;
   }
 }
 @media (max-width: 992px) {
@@ -1326,6 +1341,7 @@ a.carousel-button:active {
   background-image: url(https://i.ibb.co/fNY8LZd/kawaii-responde-desktop-1.png);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 .body-faq .banner img {
   width: 100%;
@@ -1356,7 +1372,7 @@ a.carousel-button:active {
   line-height: 33px;
 }
 .preguntas-frecuentes .pregunta img {
-  position: absolute;
+  position: relative;
 }
 .preguntas-frecuentes .pregunta .reloj {
   margin: -90px 0px 0px 41rem;
@@ -1552,11 +1568,11 @@ a.carousel-button:active {
 
 .about-body {
   background-image: url("https://i.ibb.co/F7vps9X/fondo.png");
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .about-section1 {
@@ -1593,7 +1609,6 @@ a.carousel-button:active {
   flex: 1;
   padding-right: 20px;
   color: #404041;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Ubuntu;
   font-size: 2rem;
   line-height: 3rem;
@@ -1633,7 +1648,6 @@ a.carousel-button:active {
 
 .about-text2 {
   color: #404041;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Ubuntu;
   font-size: 2rem;
   line-height: 3rem;
@@ -1659,7 +1673,6 @@ a.carousel-button:active {
 .about-text3 {
   padding: 0 20px;
   color: #404041;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Ubuntu;
   font-size: 2rem;
   line-height: 3rem;
@@ -1688,7 +1701,6 @@ a.carousel-button:active {
 
 .about-text {
   color: #404041;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Ubuntu;
   font-size: 2rem;
   line-height: 3rem;
@@ -1703,6 +1715,64 @@ a.carousel-button:active {
   padding-right: 6rem;
   width: 100%;
   z-index: -2;
+}
+
+.nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://i.ibb.co/tCC0Ysd/fondo-hamburger.jpg);
+  z-index: 1000;
+}
+.nav img {
+  max-width: 30%;
+  height: auto;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.nav.menu-open img {
+  opacity: 1;
+}
+
+.nav-list {
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.nav-list li {
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-family: "Quatsch";
+  color: #7469C7;
+}
+.nav-list a {
+  text-decoration: none;
+}
+
+.open-menu {
+  display: block;
+  font-size: 3rem;
+  color: #424040;
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  z-index: 1001;
+}
+
+.close-menu {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 3rem;
 }
 
 @media (max-width: 576px) {
@@ -1730,6 +1800,18 @@ a.carousel-button:active {
 @media (max-width: 768px) {
   .about-section1 {
     margin-top: 3rem;
+  }
+  .nuestros-tittle {
+    max-width: 120%;
+    margin-top: 0 !important;
+  }
+  .about-section1, .about-section2, .about-section3.about-section4 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .about-text2, .about-text3, .about-text {
+    padding: 0;
+    margin: 0;
   }
 }
 @media (max-width: 992px) {
@@ -1792,6 +1874,18 @@ a.carousel-button:active {
   .otakusimg {
     padding: 2rem;
     max-width: 80%;
+  }
+  .about-section1, .about-section2, .about-section3.about-section4 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .about-text2, .about-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-text3 {
+    padding: 0;
+    padding-top: 1rem;
   }
 }
 @media (max-width: 576px) {
