@@ -1082,10 +1082,6 @@ a.carousel-button:active {
   max-width: 100vw;
 }
 
-.imgreco {
-  position: relative;
-}
-
 @media (min-width: 993px) {
   .img-mobile-l {
     display: none;
@@ -1539,7 +1535,7 @@ a.carousel-button:active {
     margin: -12.7rem 0px 0px 39rem !important;
   }
   .pregunta .drop-shipping-2 {
-    margin: -9rem 0px 0px 43rem;
+    margin: -9rem 0px 0px 25rem;
     height: 85px;
   }
 }
