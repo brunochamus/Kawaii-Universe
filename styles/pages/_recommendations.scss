@@ -37,7 +37,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    .banner {
+    .banner{
         img {
             width: 100%;
             height: auto;
@@ -289,17 +289,18 @@
 }
 
 .img-mobile-l{
-
     max-width: 100vw;
 }
 
 @media (min-width: 993px) {
-
 .img-mobile-l{
     display: none;
 }
 
-    .banner {
+    .banner-mobile{
+        img{
+            display: none;
+        }
         .icons-mobile {
             display: none;
         }
@@ -390,6 +391,22 @@
         display: none;
     }
 
+    .flechin{
+        display: none;
+    }
+    .banner{
+        .banner-destkop{
+            display: none;
+        }
+    }
+
+    .banner-mobile{
+        img{
+        width: 100% !important;
+        }
+    }
+
+
     .nav {
         display: none;
         position: fixed;
@@ -413,7 +430,7 @@
     
         &.menu-open {
             img {
-                opacity: 1; // Mostrar la imagen cuando el menú está abierto
+                opacity: 1;
             }
         }
     }
@@ -440,8 +457,8 @@
         font-size: 3rem;
         color: #424040;
         position: absolute;
-        top: 25px;
-        right: 30px;
+        top: 35px;
+        right: 40px;
         z-index: 1001;
     }
 

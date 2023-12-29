@@ -1,9 +1,9 @@
-.banner-about-div{
+.banner{
     background: linear-gradient(180deg, #F9EE80 10.39%, #FFFCDB 107.97%);
     display: flex;
     margin-bottom: -7px;
 }
-.banner-about{
+.banner-destkop{
     max-width: 100%;
 }
 .banner-story{
@@ -184,6 +184,8 @@
         margin:0;
     }
 }
+
+
 @media (max-width: 768px) {
     .about-section1{
         margin-top: 3rem;
@@ -198,6 +200,7 @@
         align-items: center;
         text-align: center;
     }
+
 
     .text-container,
     .img-container {

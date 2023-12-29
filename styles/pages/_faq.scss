@@ -179,8 +179,106 @@
     }
 }
 
+@media (min-width: 993px) {
+    
+        .banner {
+            .icons-mobile {
+                display: none;
+            }
+        }
+    
+        .banner-mobile{
+            img{
+                display: none;
+            }
+        }
+    
+        .body-mobile {
+            display: none;
+        }
+    }
+
 
 @media (max-width: 992px) {
+    .flechin{
+        display: none;
+    }
+    .banner{
+        .banner-destkop{
+            display: none;
+        }
+    }
+
+    .banner-mobile{
+        img{
+        width: 100% !important;
+        }
+    }
+
+
+    .nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://i.ibb.co/tCC0Ysd/fondo-hamburger.jpg);
+        z-index: 1000;
+
+        img {
+            max-width: 30%;
+            height: auto;
+            margin-top: 20px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    
+        &.menu-open {
+            img {
+                opacity: 1;
+            }
+        }
+    }
+
+    .nav-list {
+        list-style: none !important;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+
+        li {
+            padding: 1.5rem;
+            font-size: 2rem;
+            font-family: "Quatsch";
+            color: #7469C7;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+
+    .open-menu {
+        display: block;
+        font-size: 3rem;
+        color: #424040;
+        position: absolute;
+        top: 35px;
+        right: 40px;
+        z-index: 1001;
+    }
+
+    .close-menu {
+        display: none;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        font-size: 3rem;
+    }
+
     .pregunta {
         .drop-shipping{
             margin: -8.7rem 0px 0px 11rem !important;

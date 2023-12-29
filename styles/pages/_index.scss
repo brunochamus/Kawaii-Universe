@@ -1,4 +1,4 @@
-.banner-index {
+.banner-destkop {
     width: 100%;
     height: auto;
     display: block;
@@ -490,6 +490,7 @@ transform: scale(1.2);
     }
 }
 @media (max-width: 992px) {
+
     .carousel-title{
         font-size: 2rem;
         margin-left: -2rem;
