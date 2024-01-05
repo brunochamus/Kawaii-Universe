@@ -1395,150 +1395,6 @@ a.carousel-button:active {
   height: 85px;
 }
 
-@media (max-width: 576px) {
-  .preguntas-frecuentes .pregunta p {
-    font-size: 18px !important;
-  }
-  .preguntas-frecuentes .pregunta .reloj {
-    margin: -110px 0px 0px 9rem;
-    height: 40px;
-  }
-  .preguntas-frecuentes .pregunta .casa {
-    margin: -11rem 0px 0px 21rem;
-    height: 35px;
-  }
-  .preguntas-frecuentes .pregunta .drop-shipping {
-    margin: -9.7rem 0px 0px 11.5rem;
-    height: 50px;
-  }
-  .preguntas-frecuentes .pregunta .monedas {
-    margin: -9.5rem 0px 0px 23rem;
-    height: 40px;
-  }
-  .preguntas-frecuentes .pregunta .regalo {
-    margin: -17.3rem 0px 0px 12rem;
-    height: 35px;
-  }
-  .preguntas-frecuentes .pregunta .drop-shipping-2 {
-    margin: -11.2rem 0px 0px 15rem;
-    height: 55px;
-  }
-}
-@media (max-width: 768px) {
-  .pregunta .reloj {
-    margin: -87px 0px 0px 36rem !important;
-    height: 50px !important;
-  }
-  .pregunta .casa {
-    margin: -9rem 0px 0px 20rem !important;
-    height: 45px !important;
-  }
-  .pregunta .drop-shipping {
-    margin: -8.5rem 0px 0px 11rem !important;
-    height: 68px !important;
-  }
-  .pregunta .monedas {
-    margin: -8rem 0px 0px 23rem !important;
-    height: 55px !important;
-  }
-  .pregunta .regalo {
-    margin: -14.4rem 0px 0px 37rem !important;
-    height: 55px !important;
-  }
-  .pregunta .drop-shipping-2 {
-    margin: -12.5rem 0px 0px 38rem !important;
-    height: 65px !important;
-  }
-}
-@media (min-width: 993px) {
-  .banner .icons-mobile {
-    display: none;
-  }
-  .banner-mobile img {
-    display: none;
-  }
-  .body-mobile {
-    display: none;
-  }
-}
-@media (max-width: 992px) {
-  .flechin {
-    display: none;
-  }
-  .banner .banner-destkop {
-    display: none;
-  }
-  .banner-mobile img {
-    width: 100% !important;
-  }
-  .nav {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(https://i.ibb.co/tCC0Ysd/fondo-hamburger.jpg);
-    z-index: 1000;
-  }
-  .nav img {
-    max-width: 30%;
-    height: auto;
-    margin-top: 20px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  .nav.menu-open img {
-    opacity: 1;
-  }
-  .nav-list {
-    list-style: none !important;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  }
-  .nav-list li {
-    padding: 1.5rem;
-    font-size: 2rem;
-    font-family: "Quatsch";
-    color: #7469C7;
-  }
-  .nav-list a {
-    text-decoration: none;
-  }
-  .open-menu {
-    display: block;
-    font-size: 3rem;
-    color: #424040;
-    position: absolute;
-    top: 35px;
-    right: 40px;
-    z-index: 1001;
-  }
-  .close-menu {
-    display: none;
-    position: absolute;
-    top: 25px;
-    right: 30px;
-    font-size: 3rem;
-  }
-  .pregunta .drop-shipping {
-    margin: -8.7rem 0px 0px 11rem !important;
-  }
-  .pregunta .monedas {
-    margin: -7.9rem 0px 0px 23rem !important;
-  }
-  .pregunta .regalo {
-    margin: -12.7rem 0px 0px 39rem !important;
-  }
-  .pregunta .drop-shipping-2 {
-    margin: -9rem 0px 0px 25rem;
-    height: 85px;
-  }
-}
 @font-face {
   font-family: "Quatsch";
   src: url("../assets/font/QuatschDEMO.otf") format("truetype");
@@ -1546,7 +1402,6 @@ a.carousel-button:active {
 .banner {
   background: linear-gradient(180deg, #F9EE80 10.39%, #FFFCDB 107.97%);
   display: flex;
-  margin-bottom: -7px;
 }
 
 .banner-destkop {
@@ -1558,6 +1413,7 @@ a.carousel-button:active {
 }
 
 .banner-story-img {
+  margin-top: 2rem;
   max-width: 100%;
   margin-bottom: -12rem;
 }
@@ -1604,10 +1460,12 @@ a.carousel-button:active {
 .about-text1 {
   flex: 1;
   padding-right: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
   color: #404041;
   font-family: Ubuntu;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 24px;
 }
 
 .img-quienes {
@@ -1645,11 +1503,13 @@ a.carousel-button:active {
 .about-text2 {
   color: #404041;
   font-family: Ubuntu;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 24px;
   margin-bottom: 5rem;
   margin-left: 5rem;
   margin-right: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
 }
 
 .container2 {
@@ -1670,8 +1530,10 @@ a.carousel-button:active {
   padding: 0 20px;
   color: #404041;
   font-family: Ubuntu;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
   padding-left: 4rem;
   padding-right: 7rem;
 }
@@ -1698,8 +1560,10 @@ a.carousel-button:active {
 .about-text {
   color: #404041;
   font-family: Ubuntu;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
   margin-bottom: 5rem;
   margin-left: 5rem;
   margin-right: 4rem;
@@ -1769,124 +1633,4 @@ a.carousel-button:active {
   top: 25px;
   right: 30px;
   font-size: 3rem;
-}
-
-@media (max-width: 576px) {
-  p {
-    font-size: 1rem;
-  }
-  .nuestros-tittle {
-    min-width: 130%;
-  }
-  .about-section2 {
-    margin-top: 3rem;
-  }
-  .about-text2 {
-    margin-bottom: 1rem;
-  }
-  .about-text {
-    margin-bottom: 1rem;
-  }
-  .about-section1, .about-text2, .about-text3, .about-text {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin: 0;
-  }
-}
-@media (max-width: 768px) {
-  .about-section1 {
-    margin-top: 3rem;
-  }
-  .nuestros-tittle {
-    max-width: 120%;
-    margin-top: 0 !important;
-  }
-  .about-section1, .about-section2, .about-section3.about-section4 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-  .about-text2, .about-text3, .about-text {
-    padding: 0;
-    margin: 0;
-  }
-}
-@media (max-width: 992px) {
-  .container1,
-  .container2,
-  .container4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .text-container,
-  .img-container {
-    max-width: 100%;
-  }
-  .recuerdos-img,
-  .img-quienes,
-  .img-quienes2,
-  .otakusimg {
-    width: 100%;
-  }
-  .quienes-tittle {
-    margin-top: 3rem;
-  }
-  .img-quienes {
-    max-width: 80%;
-  }
-  .nuestros-tittle {
-    margin-top: -5rem;
-  }
-  .about-body p {
-    text-align: justify;
-  }
-  .img-quienes2 {
-    max-width: 70%;
-    padding: 2rem;
-  }
-  .recuerdos-tittle {
-    max-width: 80%;
-    margin-right: auto;
-    margin-bottom: -4rem;
-  }
-  .recuerdos-img {
-    max-width: 60%;
-    padding: 0;
-    margin-top: -0.5rem;
-  }
-  .container2 {
-    flex-direction: column-reverse;
-  }
-  .about-text3 {
-    margin-top: 2rem;
-  }
-  .otakus {
-    z-index: 0;
-    position: 0;
-    margin: 0;
-    margin-left: 6rem;
-  }
-  .otakusimg {
-    padding: 2rem;
-    max-width: 80%;
-  }
-  .about-section1, .about-section2, .about-section3.about-section4 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-  .about-text2, .about-text {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .about-text3 {
-    padding: 0;
-    padding-top: 1rem;
-  }
-}
-@media (max-width: 576px) {
-  p {
-    font-size: 1.5rem !important;
-    text-align: left !important;
-  }
 }/*# sourceMappingURL=styles.css.map */
