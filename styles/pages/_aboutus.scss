@@ -22,21 +22,17 @@
     overflow-x: hidden;
 }
 .about-section1{
-    padding-top:3rem;
+    padding:3rem;
     padding-left: 8rem;
-    padding-right: 8rem;
 }
 .about-section2{
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding:3rem;
 }
 .about-section3{
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding:3rem;
 }
 .about-section4{
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding:3rem;
 }
 
 .quienes-tittle{
@@ -49,8 +45,6 @@
 }
 
 .about-text1 {
-    flex: 1;
-    padding-right: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 33px;
@@ -60,8 +54,6 @@
 }
 
 .img-quienes {
-    margin-left:2rem;
-    margin-top:2rem;
     max-width: 50%;
 }
 
@@ -84,9 +76,6 @@
     max-width: 50%;
 }
 .img-quienes2{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-right: 6rem;
     width: 100%;
 }
 .about-text2{
@@ -94,8 +83,7 @@
     font-family: Ubuntu;
     font-size: 24px;
     margin-bottom: 5rem;
-    margin-left: 5rem;
-    margin-right: 4rem;
+    padding-left: 5rem;
     font-style: normal;
     font-weight: 400;
     line-height: 33px;
@@ -112,7 +100,6 @@
 .recuerdos-img {
     max-width: 50%;
     padding-left: 6rem;
-
 }
 
 .about-text3 {
@@ -122,9 +109,8 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 33px;;
-    padding-left: 4rem;
-    padding-right: 7rem;
+    line-height: 33px;
+    padding-left: 3rem;
 }
 
 
@@ -157,9 +143,6 @@
     margin-right: 4rem;
 }
 .otakusimg{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-right: 6rem;
     width: 100%;
     z-index: -2;
 }
@@ -226,4 +209,85 @@
     font-size: 3rem;
 }
 
+@media only screen and (min-width: 400px) and (max-width: 992px) {
+    .about-body,
+    .banner-story,
+    .flechin,
+    .about-section1,
+    .about-section2,
+    .about-section3,
+    .about-section4,
+    .container1,
+    .container2,
+    .container4,
+    .text-container,
+    .img-container,
+    .about-text1,
+    .about-text2,
+    .about-text3,
+    .about-text,
+    .recuerdos-tittle,
+    .nuestros-tittle,
+    .quienes-tittle,
+    .otakus {
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        width: 100%;
+    }
+
+    .img-quienes,
+    .img-quienes2,
+    .recuerdos-img,
+    .otakusimg {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+    }
+    
+    .banner-story-img{
+        margin-bottom: 0;
+    }
+    .about-text1,.about-text2,.about-text3,.about-text {
+        margin:1rem;
+        color: #404041;
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        width: auto;
+        
+    }
+    .text-container{
+        margin:0;
+        max-width: 100%;
+    }
+    .recuerdos-tittle{
+        max-width: 90%;
+        margin-top: 1rem;
+    }
+    .img-quienes{
+        max-width: 70%;
+    }
+    .recuerdos-img,.otakus{
+        max-width: 100%;
+    }
+    .img-quienes2,.recuerdos-img{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    .img-container{
+        align-items: center;
+        justify-content: center;
+        margin:0 auto;
+        max-width: none;
+        max-height: 50%;
+    }
+    .otakusimg{
+        width: 80%;
+    }
+}
 

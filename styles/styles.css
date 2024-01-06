@@ -1103,9 +1103,6 @@ a.carousel-button:active {
   .body-mobile .scroll-x .cardX .text-mobile .hidden-text {
     font-size: 17px !important;
   }
-  p, .friend {
-    margin: 40px !important;
-  }
 }
 @media (max-width: 768px) {
   .body-mobile .scroll-x {
@@ -1306,6 +1303,77 @@ a.carousel-button:active {
     margin: 30px 290px 60px 290px;
   }
 }
+@media only screen and (min-width: 400px) and (max-width: 992px) {
+  .hidden-text {
+    overflow: hidden;
+    color: #282828;
+    text-overflow: ellipsis;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .body-mobile .scroll-x .cardX .text-mobile {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .body-mobile .scroll-x .cardX {
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+  .body-mobile .scroll-x .cardX .text-mobile .show-more-button {
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgb(135, 135, 135);
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-family: Ubuntu;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    -moz-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  .recommendations .list-recommendations .tips p {
+    padding: 0;
+    margin: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #282828;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 4rem;
+  }
+  .recommendations .friend {
+    margin: 0;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .recommendations h3 {
+    margin: 0;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+}
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -1395,6 +1463,38 @@ a.carousel-button:active {
   height: 85px;
 }
 
+@media only screen and (min-width: 400px) and (max-width: 992px) {
+  .preguntas-frecuentes,
+  .pregunta,
+  .pregunta h3,
+  .pregunta p,
+  .pregunta img {
+    display: block;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+  }
+  .pregunta p {
+    color: #404041;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .preguntas-frecuentes .pregunta .reloj, .preguntas-frecuentes .pregunta .regalo, .preguntas-frecuentes .pregunta .drop-shipping-2, .preguntas-frecuentes .pregunta .monedas, .preguntas-frecuentes .pregunta .casa, .preguntas-frecuentes .pregunta .drop-shipping {
+    margin: 0;
+    margin: auto;
+  }
+  .pregunta h3 {
+    text-align: center;
+  }
+  .preguntas-frecuentes .pregunta h3 {
+    text-align: center;
+  }
+}
 @font-face {
   font-family: "Quatsch";
   src: url("../assets/font/QuatschDEMO.otf") format("truetype");
@@ -1428,24 +1528,20 @@ a.carousel-button:active {
 }
 
 .about-section1 {
-  padding-top: 3rem;
+  padding: 3rem;
   padding-left: 8rem;
-  padding-right: 8rem;
 }
 
 .about-section2 {
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding: 3rem;
 }
 
 .about-section3 {
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding: 3rem;
 }
 
 .about-section4 {
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding: 3rem;
 }
 
 .quienes-tittle {
@@ -1458,8 +1554,6 @@ a.carousel-button:active {
 }
 
 .about-text1 {
-  flex: 1;
-  padding-right: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 33px;
@@ -1469,8 +1563,6 @@ a.carousel-button:active {
 }
 
 .img-quienes {
-  margin-left: 2rem;
-  margin-top: 2rem;
   max-width: 50%;
 }
 
@@ -1494,9 +1586,6 @@ a.carousel-button:active {
 }
 
 .img-quienes2 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  padding-right: 6rem;
   width: 100%;
 }
 
@@ -1505,8 +1594,7 @@ a.carousel-button:active {
   font-family: Ubuntu;
   font-size: 24px;
   margin-bottom: 5rem;
-  margin-left: 5rem;
-  margin-right: 4rem;
+  padding-left: 5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 33px;
@@ -1534,8 +1622,7 @@ a.carousel-button:active {
   font-style: normal;
   font-weight: 400;
   line-height: 33px;
-  padding-left: 4rem;
-  padding-right: 7rem;
+  padding-left: 3rem;
 }
 
 .container4 {
@@ -1570,9 +1657,6 @@ a.carousel-button:active {
 }
 
 .otakusimg {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  padding-right: 6rem;
   width: 100%;
   z-index: -2;
 }
@@ -1633,4 +1717,83 @@ a.carousel-button:active {
   top: 25px;
   right: 30px;
   font-size: 3rem;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 992px) {
+  .about-body,
+  .banner-story,
+  .flechin,
+  .about-section1,
+  .about-section2,
+  .about-section3,
+  .about-section4,
+  .container1,
+  .container2,
+  .container4,
+  .text-container,
+  .img-container,
+  .about-text1,
+  .about-text2,
+  .about-text3,
+  .about-text,
+  .recuerdos-tittle,
+  .nuestros-tittle,
+  .quienes-tittle,
+  .otakus {
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+  .img-quienes,
+  .img-quienes2,
+  .recuerdos-img,
+  .otakusimg {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+  }
+  .banner-story-img {
+    margin-bottom: 0;
+  }
+  .about-text1, .about-text2, .about-text3, .about-text {
+    margin: 1rem;
+    color: #404041;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    width: auto;
+  }
+  .text-container {
+    margin: 0;
+    max-width: 100%;
+  }
+  .recuerdos-tittle {
+    max-width: 90%;
+    margin-top: 1rem;
+  }
+  .img-quienes {
+    max-width: 70%;
+  }
+  .recuerdos-img, .otakus {
+    max-width: 100%;
+  }
+  .img-quienes2, .recuerdos-img {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+  .img-container {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: none;
+    max-height: 50%;
+  }
+  .otakusimg {
+    width: 80%;
+  }
 }/*# sourceMappingURL=styles.css.map */
