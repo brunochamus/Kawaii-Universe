@@ -41,6 +41,11 @@ const manga = [
         description: "Perdió su identidad y su rostro, y ahora se ve como un caimán. ¿Por qué pasó esto y quién es en realidad? Con un estilo de dibujo muy único, detallado y gran habilidad para el uso del negro, se plantea esta trama original, con personajes atrapantes, intrigantes y dotados de un interesante humor negro. Nos gustaron mucho las habilidades de cada personaje, la forma en la que se entrelazan los acontecimientos y el mundo surrealista en el que todo se desarrolla.",
         image: "https://i.ibb.co/hVsLYTC/Whats-App-Image-2023-12-07-at-21-28-01.jpg"
     },
+    {
+        title: "Fukumenkei Noise",
+        description: "Nos encanta la música, así que no pudimos dejar pasar Fukumenkei Noise, una serie de manga en la que la música y el amor llevan al mismo destino.La protagonista de la historia, Nino, utiliza su canto como señal de guía en la eterna espera de su amor de la infancia.¿Qué sucederá cuando este regrese pero ahora haya alguien más para llenar el vacío de su corazón?Pese a que ya pasaron varios años desde que lo leímos, y gracias a la versión de anime y a su banda sonora, las canciones todavía están muy presentes en nuestras vidas. ¡Tanto es así que aún las tarareamos de vez en cuando!",
+        image: "https://i.ibb.co/929QgPP/Whats-App-Image-2023-12-07-at-21-28.png"
+    },
 ];
 
 const anime = [
@@ -88,11 +93,6 @@ const anime = [
         title: "Shokugeki no Sōma",
         description: "Shokugeki no Sōma, más comúnmente conocido como Food Wars, es un shonen y ecchi de gastronomía. Comenzamos a verlo en familia, pero resultó no ser apto para niños, así que fue visto por los adultos de la casa. Nos pareció muy divertido, con una historia atrapante y unas luchas gastronómicas que dan hambre y ganas de experimentar platillos raros. Estamos esperando que los chicos estén más a la altura del contenido para poder disfrutarlo en familia.",
         image: "https://i.ibb.co/mDMftmk/Food-Wars-Shokugeki-no-Soma-Vol-1-by-Yuto-Tsukuda-Paperback-Indigo-Chapters.jpg"
-    },
-    {
-        title: "Fukumenkei Noise",
-        description: "Nos encanta la música, así que no pudimos dejar pasar Fukumenkei Noise, una serie de manga en la que la música y el amor llevan al mismo destino.La protagonista de la historia, Nino, utiliza su canto como señal de guía en la eterna espera de su amor de la infancia.¿Qué sucederá cuando este regrese pero ahora haya alguien más para llenar el vacío de su corazón?Pese a que ya pasaron varios años desde que lo leímos, y gracias a la versión de anime y a su banda sonora, las canciones todavía están muy presentes en nuestras vidas. ¡Tanto es así que aún las tarareamos de vez en cuando!",
-        image: "https://i.ibb.co/929QgPP/Whats-App-Image-2023-12-07-at-21-28.png"
     },
 ];
 
@@ -169,14 +169,4 @@ cardContainers.forEach(container => {
     });
 });
 
-document.getElementById('open').addEventListener('click', function () {
-    document.getElementById('nav').style.display = 'block';
-    document.getElementById('open').style.display = 'none';
-    document.getElementById('close').style.display = 'block';
-});
 
-document.getElementById('close').addEventListener('click', function () {
-    document.getElementById('nav').style.display = 'none';
-    document.getElementById('open').style.display = 'block';
-    document.getElementById('close').style.display = 'none';
-});

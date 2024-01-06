@@ -1098,7 +1098,10 @@ a.carousel-button:active {
 }
 @media (max-width: 576px) {
   .body-mobile .scroll-x {
-    margin: 10px 90px 10px 45px !important;
+    margin: 10px 90px 10px 7px !important;
+  }
+  .body-mobile .scroll-x .cardX .text-mobile {
+    margin: 5px 30px 3px 30px !important;
   }
   .body-mobile .scroll-x .cardX .text-mobile .hidden-text {
     font-size: 17px !important;
@@ -1269,13 +1272,13 @@ a.carousel-button:active {
   }
   .body-mobile .scroll-x .cardX .text-mobile {
     font-size: 19px;
-    margin: 30px 30px 3px 30px;
+    margin: 30px 30px 3px 10px;
     font-family: Ubuntu;
     position: relative;
     position: absolute;
   }
   .body-mobile .scroll-x .cardX .text-mobile .hidden-text {
-    max-height: 100px;
+    max-height: 80px;
     overflow: hidden;
     transition: max-height 0.3s ease;
   }
