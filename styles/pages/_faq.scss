@@ -106,3 +106,35 @@
     }
 }
 
+@media only screen and (min-width: 400px) and (max-width: 992px) {
+    .preguntas-frecuentes,
+    .pregunta,
+    .pregunta h3,
+    .pregunta p,
+    .pregunta img {
+        display:block;
+        margin:0;
+        max-width: 100%;
+        padding: 0;
+    }
+    .pregunta p{
+        color: #404041;
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .preguntas-frecuentes .pregunta .reloj,.preguntas-frecuentes .pregunta .regalo,.preguntas-frecuentes .pregunta .drop-shipping-2,.preguntas-frecuentes .pregunta .monedas,.preguntas-frecuentes .pregunta .casa,.preguntas-frecuentes .pregunta .drop-shipping{
+        margin:0;
+        margin:auto;
+    }
+    .pregunta h3{
+        text-align: center;
+    }
+    .preguntas-frecuentes .pregunta h3 {
+        text-align: center;
+    }
+}
