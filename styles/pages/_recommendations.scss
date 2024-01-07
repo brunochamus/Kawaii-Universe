@@ -298,6 +298,7 @@
 
 
 @media (min-width: 993px) {
+
 .img-mobile-l{
     display: none;
 }
@@ -335,6 +336,9 @@
 
 
 @media (max-width: 768px) {
+    .flecha{
+        display: none;
+    }
     .body-mobile {
         .scroll-x {
             height: 44rem !important;

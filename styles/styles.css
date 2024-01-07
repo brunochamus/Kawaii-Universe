@@ -777,6 +777,11 @@ a.carousel-button:active {
     padding: 0;
   }
 }
+@media (max-width: 768px) {
+  .flecha {
+    display: none;
+  }
+}
 @media (max-width: 992px) {
   .products-galery {
     padding: 1rem;
@@ -1108,6 +1113,9 @@ a.carousel-button:active {
   }
 }
 @media (max-width: 768px) {
+  .flecha {
+    display: none;
+  }
   .body-mobile .scroll-x {
     height: 44rem !important;
     width: 35rem !important;
